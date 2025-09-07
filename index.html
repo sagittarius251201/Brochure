@@ -11,7 +11,7 @@
     <style>
         @media print {
             body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-            .a4-container { box-shadow: none !important; }
+            .a4-container { box-shadow: none !important; border: none !important; }
         }
         body {
             font-family: 'Inter', sans-serif;
@@ -26,6 +26,7 @@
             display: flex;
             flex-direction: column;
             overflow: hidden; /* This is crucial to prevent scrolling */
+            border: 1px solid #d1d5db; /* Corrected border color */
         }
         .gradient-text {
             background: -webkit-linear-gradient(45deg, #4f46e5, #7c3aed);
@@ -61,7 +62,7 @@
                 <div class="flex flex-col items-center justify-center bg-gray-50 rounded-lg p-3">
                      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.adsightsolutions.com" alt="QR Code for AdSight Website" class="w-20 h-20 rounded-md shadow-sm"/>
                      <p class="text-sm font-semibold text-gray-800 mt-2">Scan to Visit Our Website</p>
-                     <p class="text-xs text-gray-500 mt-1">sales@adsightsolutions.com | +971 55 194 5740</p>
+                     <p class="text-xs text-gray-500 mt-1">sales@adsightsolutions.com | +971 55</p>
                 </div>
             </div>
 
@@ -74,7 +75,7 @@
                         <img src="./assets/financial_summary.jpeg" alt="5-Year Financial Summary Chart" class="rounded-lg shadow-md border w-full"/>
                     </div>
                     <div class="col-span-1">
-                        <h3 class="text-base font-bold text-gray-800 mb-2">Income Statement (Projections for next 4 years)</h3>
+                        <h3 class="text-base font-bold text-gray-800 mb-2">Income Statement (Realistic Scenario)</h3>
                         <div class="overflow-hidden border rounded-lg">
                             <table class="w-full text-[10px]">
                                 <thead class="bg-gray-50">
@@ -112,7 +113,7 @@
                         <p class="text-[10px] text-gray-600 leading-snug mt-1">Our models analyze millions of data points to provide unmatched insights into AI answer engines.</p>
                     </div>
                     <div>
-                        <svg class="mx-auto h-8 w-8 text-indigo-500 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.124-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.124-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M12 14a5 5 0 100-10 5 5 0 000 10z" /></svg>
+                        <svg class="mx-auto h-8 w-8 text-indigo-500 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.124-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.124-1.283-.356-1.857m0 0a5.002 5.002 0 019.288 0M12 14a5 5 0 100-10 5 5 0 000 10z" /></svg>
                         <h4 class="font-bold text-sm text-gray-800">Expert Team</h4>
                         <p class="text-[10px] text-gray-600 leading-snug mt-1">Founded by SEO veterans and AI researchers, we bridge the gap between search and generative AI.</p>
                     </div>
@@ -133,6 +134,4 @@
     </div>
 </body>
 </html>
-
-
 
